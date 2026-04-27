@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo "================================"
+echo "     SYSTEM REPORT - $(date +%D)"
+echo "================================"
+echo ""
+echo "=== System Info ==="
+echo "Date: $(date)"
+echo "User: $(whoami)"
+echo "Hostname: $(hostname)"
+echo "Uptime: $(uptime -p)"
+echo ""
+echo "=== Disk Usage ==="
+df -h
+echo ""
+echo "=== Memory Usage ==="
+free -h
+echo ""
+echo "=== Network ==="
+echo "IP Address: $(hostname -I)"
+echo ""
+echo "=== OS Info ==="
+echo "$(uname -o) $(uname -r)"
+echo ""
+echo "================================"
+echo "        END OF REPORT"
+echo "================================"
